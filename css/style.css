@@ -1,5 +1,6 @@
 body {
   margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* HEADER */
@@ -8,7 +9,7 @@ body {
   background-image: url(/img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .container {
@@ -16,9 +17,82 @@ body {
 }
 
 .header-line {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .header-logo {
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: 14px;
+
+  transition: color 0.15s linear;
+}
+
+.nav-item:hover {
+  color: #FF7400;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.cart {
+  position: relative;
+
+  border-right : 1px solid #fff;
+  padding-right: 20px;
+  height: 50px;
+}
+
+.cart-img {
+  position: absolute;
+  top: 18px;
+}
+
+.num {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+
+  transition: color 0.15s linear;
+}
+
+.num:hover {
+  color: #FF7400;
+}
+
+.phone-text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.phone-holder {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background-color: #FF7400;
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 18px;
+  font-weight: 700;
+
+  transition: background-color 0.15s linear;
+}
+
+.button:hover {
+  background-color: #b55200;
 }
 
 /* HEADER */
